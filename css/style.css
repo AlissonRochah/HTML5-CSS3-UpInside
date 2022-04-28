@@ -1,0 +1,655 @@
+.mainHeader {
+  width: 100%;
+  background-color: #2d3142;
+}
+
+.mainHeader .mainHeaderContent {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mainHeader .mainHeaderContent .logo {
+  -ms-flex-preferred-size: 330px;
+      flex-basis: 330px;
+  padding: 20px;
+  width: 200px;
+}
+
+.mainHeader .mainHeaderContent .mainHeaderContentMenu {
+  -ms-flex-preferred-size: calc(100% - 330px);
+      flex-basis: calc(100% - 330px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.mainHeader .mainHeaderContent .mainHeaderContentMenu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.mainHeader .mainHeaderContent .mainHeaderContentMenu ul li {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainHeader .mainHeaderContent .mainHeaderContentMenu ul li a {
+  padding: 0 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  color: #d36833;
+}
+
+.mainHeader .mainHeaderContent .mainHeaderContentMenu ul li a:hover {
+  background-color: #d36833;
+  color: #fff;
+}
+
+.mainCta {
+  width: 100%;
+  background-color: #2d3142;
+  background-image: url(../img/bg_main_home.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.mainCta .mainCtaContent {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.mainCta .mainCtaContent h1 {
+  font-size: 3em;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+}
+
+.mainCta .mainCtaContent p {
+  font-size: 1.875em;
+  color: #fff;
+  font-weight: 300;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.mainCta .mainCtaContent .btn {
+  background-color: #d36833;
+  color: #fff;
+  font-size: 0.8em;
+  padding: 10px 40px;
+  border-radius: 5px;
+}
+
+.mainCta .mainCtaContent .mainCtaContentSpacer {
+  margin: 0 auto;
+  max-width: 1300px;
+  padding: 200px 40px;
+}
+
+.mainBlog {
+  max-width: calc(1300px - 40px);
+  padding: 0 20px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.mainBlog .mainBlogHeader {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin: 30px 0;
+}
+
+.mainBlog .mainBlogHeader h1 {
+  color: #333;
+  margin-bottom: 5px;
+  font-size: 1.8em;
+}
+
+.mainBlog article {
+  -ms-flex-preferred-size: calc(25% - 20px);
+      flex-basis: calc(25% - 20px);
+  margin-bottom: 30px;
+  opacity: 0.7;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.mainBlog article img {
+  width: 100%;
+}
+
+.mainBlog article p {
+  margin: 10px 0;
+}
+
+.mainBlog article .category {
+  margin: 10px 0;
+  font-size: 0.875em;
+  color: #d36833;
+}
+
+.mainBlog article h2 {
+  font-weight: 300;
+  font-size: 1.2em;
+}
+
+.mainBlog article h2 a {
+  color: #333;
+}
+
+.mainBlog article:hover {
+  opacity: 1;
+}
+
+.mainOptin {
+  width: 100%;
+  background-color: #2d3142;
+  margin: 40px 0;
+}
+
+.mainOptin .mainOptinContent {
+  max-width: calc(1300px - 40px);
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mainOptin .mainOptinContent header,
+.mainOptin .mainOptinContent form {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.mainOptin .mainOptinContent header h1,
+.mainOptin .mainOptinContent form h1 {
+  color: #fff;
+  margin-right: 20px;
+  text-align: right;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.mainOptin .mainOptinContent header p,
+.mainOptin .mainOptinContent form p {
+  font-size: 0.875em;
+  color: #fff;
+  margin-right: 20px;
+  text-align: right;
+  font-weight: 300;
+}
+
+.mainOptin .mainOptinContent form {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mainOptin .mainOptinContent form input[type="text"],
+.mainOptin .mainOptinContent form input[type="email"] {
+  -ms-flex-preferred-size: 37%;
+      flex-basis: 37%;
+  border-radius: 10px;
+  border: none;
+  padding: 0 10px;
+}
+
+.mainOptin .mainOptinContent form button {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  background-color: #d36833;
+  font-size: 0.875em;
+}
+
+.mainCourse {
+  width: 100%;
+}
+
+.mainCourse .mainCourseHeader {
+  max-width: 780px;
+  margin: 0 auto;
+  text-align: center;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.mainCourse .mainCourseHeader img {
+  margin-bottom: 20px;
+}
+
+.mainCourse .mainCourseHeader h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.mainCourse .mainCourseContent {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.mainCourse .mainCourseContent article {
+  -ms-flex-preferred-size: calc(50% - 40px);
+      flex-basis: calc(50% - 40px);
+  margin: 20px 0;
+  background-color: #ebebeb;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.mainCourse .mainCourseContent article h2 {
+  font-size: 1.3em;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.mainCourse .mainCourseContent article p {
+  font-size: 0.9em;
+  color: #333;
+}
+
+.mainCourseFullWidth {
+  width: 100%;
+  padding: 40px 0;
+  background-color: #d36833;
+}
+
+.mainCourseFullWidth .mainCourseRatingContent {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.mainCourseFullWidth .mainCourseRatingContent .mainCourseRatingContentTitle {
+  color: #fff;
+  text-align: center;
+}
+
+.mainCourseFullWidth .mainCourseRatingContent .mainCourseRatingContentTitle h2 {
+  font-size: 2.4em;
+  margin-bottom: 20px;
+}
+
+.mainCourseFullWidth .mainCourseRatingContent .mainCourseRatingContentComment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mainCourseFullWidth .mainCourseRatingContent .mainCourseRatingContentComment > header {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.mainCourseFullWidth .mainCourseRatingContent .mainCourseRatingContentComment > article {
+  -ms-flex-preferred-size: calc(50% - 20px);
+      flex-basis: calc(50% - 20px);
+  margin: 20px 0;
+  background-color: #ebebeb;
+  border-radius: 5px;
+  padding: 20px;
+  color: #333;
+}
+
+.mainCourseFullWidth .mainCourseRatingContent .mainCourseRatingContentComment > article h3 {
+  font-size: 1.2em;
+  margin-bottom: 4px;
+}
+
+.mainCourseFullWidth .mainCourseRatingContent .mainCourseRatingContentComment > article img {
+  width: 15px;
+  margin-top: 5px;
+  margin-bottom: 2px;
+}
+
+.mainSchool {
+  width: 100%;
+}
+
+.mainSchool .mainSchoolContent {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mainSchool .mainSchoolContent > header {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  padding: 40px 0;
+  color: #333;
+}
+
+.mainSchool .mainSchoolContent > header h1 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+}
+
+.mainSchool .mainSchoolContentLeft {
+  -ms-flex-preferred-size: calc(70% - 20px);
+      flex-basis: calc(70% - 20px);
+}
+
+.mainSchool .mainSchoolContentLeft .mainSchoolContentLeftContent > header > p {
+  padding: 10px;
+  background-color: #2d3142;
+  border-radius: 5px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.mainSchool .mainSchoolContentLeft .mainSchoolContentLeftContent > header > p span {
+  margin-left: 20px;
+}
+
+.mainSchool .mainSchoolContentLeft .mainSchoolContentLeftContent > header > p a {
+  color: #fff;
+  font-size: .9em;
+}
+
+.mainSchool .mainSchoolContentLeft .mainSchoolContentLeftContent > header > p a:hover {
+  text-decoration: underline;
+}
+
+.mainSchool .mainSchoolContentLeft .mainSchoolContentLeftContent h2 {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.mainSchool .mainSchoolContentLeft .mainSchoolContentLeftContent > p {
+  margin-bottom: 20px;
+}
+
+.mainSchool .mainSchoolContentLeft .mainSchoolList {
+  width: 100%;
+  background-color: #ebebeb;
+  border-radius: 5px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mainSchool .mainSchoolContentLeft .mainSchoolList > header {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  color: #d36833;
+  margin-bottom: 20px;
+}
+
+.mainSchool .mainSchoolContentLeft .mainSchoolList > article {
+  -ms-flex-preferred-size: calc(50% - 10px);
+      flex-basis: calc(50% - 10px);
+}
+
+.mainSchool .mainSchoolContentLeft .mainSchoolList > article h3 {
+  font-weight: 300;
+  margin: 4px 0;
+}
+
+.mainSchool .mainSchoolAddress {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  padding: 44px 0;
+  text-align: center;
+}
+
+.mainSchool .mainSchoolAddress h2 {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+.mainSchool .mainSchoolContentRight {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+.mainSchool .mainSchoolContentRight img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.mainTutor {
+  width: 100%;
+  background-color: #2d3142;
+  padding: 20px 0;
+}
+
+.mainTutor .mainTutorContent {
+  max-width: calc(1300px - 20px);
+  padding: 10px;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+}
+
+.mainTutor .mainTutorContent > header h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.mainTutor .mainTutorContent .mainTutorContentImg {
+  margin: 20px auto;
+}
+
+.mainTutor .mainTutorContent .mainTutorContentImg img {
+  max-width: 200px;
+  border-radius: 50%;
+  padding: 3px;
+  background-color: #fff;
+}
+
+.mainTutor .mainTutorContent .mainTutorContentHistory p {
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+.mainTutor .mainTutorContent .mainTutorContentHistory h2 {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.mainTutor .mainTutorContent .mainTutorSocialNetwork {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #d36833;
+  border-radius: 5px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.mainTutor .mainTutorContent .mainTutorSocialNetwork > header {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.mainTutor .mainTutorContent .mainTutorSocialNetwork > article {
+  -ms-flex-preferred-size: 24%;
+      flex-basis: 24%;
+}
+
+.mainTutor .mainTutorContent .mainTutorSocialNetwork > article h3 {
+  font-size: .9em;
+  margin-bottom: 10px;
+}
+
+.mainTutor .mainTutorContent .mainTutorSocialNetwork > article h3 a {
+  background-color: #fff;
+  color: #d36833;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.mainTutor .mainTutorContent .mainTutorSocialNetwork > article h3 a:hover {
+  background-color: #2d3142;
+  color: #fff;
+}
+
+.mainOptinFooter {
+  width: 100%;
+  background-color: #f7f7f7;
+}
+
+.mainOptinFooter .mainOptinFooterContent {
+  max-width: 1300px;
+  padding: 40px 0;
+  text-align: center;
+  color: #333;
+  margin: 0 auto;
+}
+
+.mainOptinFooter .mainOptinFooterContent h1 {
+  font-size: 1.4em;
+  margin-bottom: 40px;
+}
+
+.mainOptinFooter .mainOptinFooterContent .btn {
+  color: #fff;
+  border-radius: 5px;
+  background-color: #d36833;
+  font-size: 1.2em;
+  padding: 10px 20px;
+}
+
+.mainFooter {
+  max-width: 1300px;
+  padding: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  color: #333;
+}
+
+.mainFooter > header {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.mainFooter > header h1 {
+  font-size: 1.4em;
+  margin-bottom: 40px;
+}
+
+.mainFooter .mainFooterPages {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.mainFooter .mainFooterLinks {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.mainFooter .mainFooterAbout {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.mainFooter > article h2 {
+  margin-bottom: 20px;
+}
+
+.mainFooter > article ul li {
+  list-style: none;
+  margin: 5px 0;
+}
+
+.mainFooter > article ul li a {
+  color: #333;
+}
+
+.mainFooter > article ul li a:hover {
+  text-decoration: underline;
+}
+
+.mainFooterRights {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #f7f7f7;
+  border-top: 1px solid #ebebeb;
+  font-size: .9em;
+  color: #666;
+  font-weight: 300;
+}
+/*# sourceMappingURL=style.css.map */
