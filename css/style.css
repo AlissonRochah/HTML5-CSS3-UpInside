@@ -245,6 +245,7 @@
 
 .mainCourse .mainCourseHeader {
   max-width: 780px;
+  padding: 0 20px;
   margin: 0 auto;
   text-align: center;
   color: #333;
@@ -302,6 +303,7 @@
 .mainCourseFullWidth .mainCourseRatingContent {
   max-width: 1300px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .mainCourseFullWidth .mainCourseRatingContent .mainCourseRatingContentTitle {
@@ -371,6 +373,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0 20px;
 }
 
 .mainSchool .mainSchoolContent > header {
@@ -566,7 +569,7 @@
 
 .mainOptinFooter .mainOptinFooterContent {
   max-width: 1300px;
-  padding: 40px 0;
+  padding: 40px 20px;
   text-align: center;
   color: #333;
   margin: 0 auto;
@@ -587,7 +590,7 @@
 
 .mainFooter {
   max-width: 1300px;
-  padding: 40px 0;
+  padding: 40px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -651,5 +654,276 @@
   font-size: .9em;
   color: #666;
   font-weight: 300;
+}
+
+/* mobile menu */
+.mainHeaderContentMenuMobile {
+  -ms-flex-preferred-size: calc(100% - 330px);
+      flex-basis: calc(100% - 330px);
+  display: none;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.mainHeaderContentMenuMobile ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20px;
+}
+
+.mainHeaderContentMenuMobile ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  position: relative;
+}
+
+.mainHeaderContentMenuMobile ul li .mainHeaderContentMenuMobileObj {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  color: #d36833;
+}
+
+.mainHeaderContentMenuMobile ul li .mainHeaderContentMenuMobileObj:hover {
+  background-color: #fff;
+  border-radius: 5px 5px 0 0;
+}
+
+.mainHeaderContentMenuMobile ul li .mainHeaderContentMenuMobileSub {
+  min-width: 200px;
+  background-color: #fff;
+  border-radius: 5px 0 5px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: absolute;
+  top: 100%;
+  right: -20px;
+}
+
+.mainHeaderContentMenuMobile ul li .mainHeaderContentMenuMobileSub > li {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.mainHeaderContentMenuMobile ul li .mainHeaderContentMenuMobileSub > li a {
+  width: 100%;
+  text-align: center;
+  color: #d36833;
+  padding: 10px 0;
+}
+
+.mainHeaderContentMenuMobile ul li .mainHeaderContentMenuMobileSub > li a:hover {
+  background-color: #d36833;
+  color: #fff;
+}
+
+/* Media */
+/* 1024px */
+@media (max-width: 64em) {
+  .mainCta .mainCtaContent h1 {
+    font-size: 2.5em;
+  }
+  .mainCta .mainCtaContent .mainCtaContentSpacer {
+    padding: 100pxpx 30px;
+  }
+  .mainOptin .mainOptinContent {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .mainOptin .mainOptinContent header {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .mainOptin .mainOptinContent header h1 {
+    text-align: center;
+  }
+  .mainOptin .mainOptinContent header p {
+    text-align: center;
+  }
+  .mainOptin .mainOptinContent form {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin: 0 auto;
+  }
+  .mainOptin .mainOptinContent form input[type=text] {
+    padding: 4px 8px;
+  }
+  .mainOptin .mainOptinContent form input[type=email] {
+    padding: 6px 12px;
+  }
+  .mainSchool .mainSchoolContent .mainSchoolAddress {
+    -ms-flex-preferred-size: calc(100% - 200px);
+        flex-basis: calc(100% - 200px);
+    margin: auto;
+  }
+  .mainSchool .mainSchoolContent .mainSchoolContentRight {
+    -ms-flex-preferred-size: 200px;
+        flex-basis: 200px;
+    max-width: 200px;
+    padding: 20px;
+  }
+  .mainSchool .mainSchoolContent .mainSchoolContentLeft {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+
+/* 768px */
+@media (max-width: 48em) {
+  .mainHeader .mainHeaderContent .mainHeaderContentMenu {
+    display: none;
+  }
+  .mainHeader .mainHeaderContent .mainHeaderContentMenuMobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .mainCta .mainCtaContent h1 {
+    font-size: 2em;
+  }
+  .mainCta .mainCtaContent .mainCtaContentSpacer {
+    padding: 60px 30px;
+  }
+  .mainCta .mainCtaContent .btn {
+    font-size: .5em;
+  }
+  .mainBlog article {
+    -ms-flex-preferred-size: calc(33% - 10px);
+        flex-basis: calc(33% - 10px);
+  }
+  .mainCourse .mainCourseFullWidth .mainCourseRatingContent .mainCourseRatingContentTitle h2 {
+    font-size: 2em;
+  }
+  .mainSchool .mainSchoolContent .mainSchoolContentLeft .mainSchoolList > article {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin: 10px 0;
+    font-size: .9em;
+    line-height: 2em;
+  }
+  .mainTutor .mainTutorContent .mainTutorSocialNetwork {
+    max-width: 80%;
+  }
+  .mainTutor .mainTutorContent .mainTutorSocialNetwork h2 {
+    margin-bottom: 20px;
+  }
+  .mainTutor .mainTutorContent .mainTutorSocialNetwork > article {
+    -ms-flex-preferred-size: 49%;
+        flex-basis: 49%;
+    margin-bottom: 20px;
+  }
+  .mainFooter .mainFooterPages {
+    -ms-flex-preferred-size: calc(50% - 10px);
+        flex-basis: calc(50% - 10px);
+  }
+  .mainFooter .mainFooterLinks {
+    -ms-flex-preferred-size: calc(50% - 10px);
+        flex-basis: calc(50% - 10px);
+  }
+  .mainFooter .mainFooterAbout {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-top: 20px;
+  }
+}
+
+/* 640px */
+@media (max-width: 40em) {
+  .mainBlog article {
+    -ms-flex-preferred-size: calc(50% - 10px);
+        flex-basis: calc(50% - 10px);
+  }
+  .mainOptin .mainOptinContent form {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .mainOptin .mainOptinContent form input[type=text] {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 10px;
+  }
+  .mainOptin .mainOptinContent form input[type=email] {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 10px;
+  }
+  .mainOptin .mainOptinContent form button {
+    margin: 0 auto;
+    padding: 6px 12px;
+  }
+  .mainCourse .mainCourseFullWidth .mainCourseRatingContent .mainCourseRatingContentTitle h2 {
+    font-size: 1.6em;
+  }
+  .mainCourse .mainCourseFullWidth .mainCourseRatingContent .mainCourseRatingContentComment > article {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .mainCourse .mainCourseFullWidth .mainCourseRatingContent .mainCourseRatingContentComment > header {
+    font-size: 1.2em;
+  }
+}
+
+/* 520px */
+@media (max-width: 32em) {
+  .mainSchool .mainSchoolContent .mainSchoolAddress {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .mainSchool .mainSchoolContent .mainSchoolContentRight {
+    display: none;
+  }
+  .mainTutor .mainTutorContent .mainTutorSocialNetwork > article {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+
+/* 480px */
+@media (max-width: 30em) {
+  .mainHeader .mainHeaderContent .logo {
+    -ms-flex-preferred-size: 220px;
+        flex-basis: 220px;
+  }
+  .mainHeader .mainHeaderContent .logo img {
+    width: 100%;
+  }
+  .mainHeader .mainHeaderContent .mainHeaderContentMenuMobile {
+    -ms-flex-preferred-size: calc(100% - 220px);
+        flex-basis: calc(100% - 220px);
+  }
+  .mainBlog article {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .mainCourse .mainCourseHeader img {
+    max-width: 100%;
+  }
+  .mainCourse .mainCourseContent article {
+    -ms-flex-preferred-size: calc(100% - 40px);
+        flex-basis: calc(100% - 40px);
+    margin: 10px 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

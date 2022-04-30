@@ -8,3 +8,7 @@
     text-decoration: none;
     font-family: 'Ubuntu', sans-serif;
 }
+
+.hidden {
+    display: none !important;
+}
